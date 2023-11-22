@@ -1,0 +1,51 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fcf8e8; /* Set background color to FCF8E8 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 300px;
+    background-color: #fcf8e8; /* Set background color to FCF8E8 */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .input-box {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color: #D4E2D4; /* Set box color to D4E2D4 */
+    border: none;
+    outline: none;
+    color: grey; /* Set text color to grey */
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px 24px;
+    background-color: #DF7861; /* Set background color to DF7861 */
+    color: black; /* Set text color to black */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    background-color: #ECB390;
+  }

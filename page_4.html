@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="body_4.css">
+  <title>V-Vote</title>
+
+  <!-- Include MetaMask Script -->
+  <script src="https://cdn.jsdelivr.net/npm/@metamask/detect-provider"></script>
+</head>
+<body>
+
+  <header>
+    <h1>V-Vote</h1>
+  </header>
+
+  <div class="container">
+    <div class="info-container">
+      <div class="info-line">
+        <div class="info-label">Name:</div>
+        <div class="info-value">John Doe</div>
+      </div>
+       <div class="info-line">
+        <div class="info-label">Age:</div>
+        <div class="info-value">19</div>
+      </div>
+      <div class="info-line">
+        <div class="info-label">Verification ID:</div>
+        <div class="info-value">V123456</div>
+      </div>
+    </div>
+    <div class="info-container">
+      <div class="info-line">
+        <div class="info-label">Phone:</div>
+        <div class="info-value">7736268900</div>
+      </div>
+      <div class="info-line">
+        <div class="info-label">Email:</div>
+        <div class="info-value">john.doe@example.com</div>
+      </div>
+      <div class="info-line">
+        <div class="info-label">Documents:</div>
+        <div class="info-value">A123456, B789012</div>
+      </div>
+    </div>
+  </div>
+
+  <section class="main-content">
+    <div class="box">
+      <p class="next-phase-time">Next Voting Phase: Date, Time</p>
+      <div class="token-section">
+        <!-- Clickable Ethereum Logo Image -->
+        <img src="https://cdn3.iconfinder.com/data/icons/currency-and-cryptocurrency-signs/64/cryptocurrency_blockchain_Ethereum_ETH-512.png" alt="Token Logo" class="token-logo" onclick="connectMetaMask()">
+        <p class="tokens-available">Tokens Available: 0</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+  <script>
+    // Function to connect MetaMask account
+    async function connectMetaMask() {
+      if (window.ethereum) {
+        try {
+          // Request account access
+          const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+
+          // Get the user's account address
+          const account = accounts[0];
+          console.log('Connected account:', account);
+
+          // Now you can use `account` for various interactions
+          // For example, you can update the UI to display the connected account
+          // or trigger actions based on the connected account
+        } catch (error) {
+          console.error(error);
+        }
+      } else {
+        alert('MetaMask is not installed! Please install it to use this website.');
+      }
+    }
+  </script>
+</body>
+</html>
