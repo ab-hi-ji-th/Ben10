@@ -6,3 +6,5 @@ The backbone of the system relies on blockchain technology, ensuring the integri
 In order to enhance accessibility, particularly for those lacking personal computers, the government plans to establish dedicated computer stations in specified areas across every district. This strategic move ensures that citizens from all socio-economic backgrounds can actively participate in the democratic process. Users will enjoy seamless access to their voting profiles, information on district candidates, and other pertinent details through an intuitive and user-friendly interface.
 
 By amalgamating state-of-the-art technology with inclusive measures, our endeavor aims to streamline the voting process, minimize fraudulent activities, and promote broader civic engagement. Ultimately, this initiative contributes to the establishment of a more resilient and participatory electoral system for the citizens of India.
+
+To test the created prototype, just open the files in vs code and right click on testing.html and click on open with live server. You will be redirected to a website automatically.
